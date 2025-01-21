@@ -38,6 +38,13 @@ public class MedicoController {
         //carregar os dados do banco de dados
         var medico = repository.getReferenceById(dados.id());
         medico.atualizarInformacoes(dados);
+    }
+
+    @DeleteMapping("/{id}")
+    @Transactional
+    public void excluir(@PathVariable Long id){
+        repository.deleteById(id);
+
 
     }
 }
