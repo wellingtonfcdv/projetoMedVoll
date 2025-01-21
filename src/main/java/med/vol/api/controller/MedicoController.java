@@ -49,7 +49,5 @@ public class MedicoController {
         //Recupera os dados pelo id
         var medico = repository.getReferenceById(id);
         medico.excluir();
-
-
     }
 }
