@@ -22,7 +22,7 @@ public class MedicoController {
     @Transactional
     public void cadastrar(@RequestBody @Valid DadosCadastroMedico dados){
         repository.save(new Medico(dados));
-
+        //System.out.println("Dados recebidos: " + dados);
     }
 
     //@PageableDefaul: Define a forma que será exibida a consulta

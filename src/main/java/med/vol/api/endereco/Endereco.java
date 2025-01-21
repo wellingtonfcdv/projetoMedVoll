@@ -29,6 +29,9 @@ public class Endereco {
         this.uf = dados.uf();
     }
 
+    public Endereco(Endereco endereco) {
+    }
+
 
     public void atualizarInformacoes(DadosEndereco dados) {
         if (dados.logradouro() != null){
